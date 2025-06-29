@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ai-Studypal",
+    "desc": "Full-Stack chatbot for learning using google ai studio api ",
+    "image": "instagrammern",
+    "Tech-Stack": "mongodb,nodejs,ejs,express",
+    "links": {
+      "view": "https://ai-studypal-1.onrender.com/",
+      "code": "https://github.com/Tushar-6969/AI-StudyPal"
+    }
+  },
+  {
+    "name": "Fake News Detector",
+    "desc": "A machine learning model that detects fake news using NLP.\nBuilt using a pre-trained BERT model fine-tuned with Kaggle dataset ",
+    "image": "flipkartmern",
+    "category": "mern",
+    "links": {
+      "view": "https://fake-news-1.onrender.com/",
+      "code": "https://github.com/Tushar-6969/bert-fake-news-detector"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "portfolio1",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/jigar-sable/Portfolio-Website"
+    }
+  }
+]
