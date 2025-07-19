@@ -8,7 +8,20 @@
       "view": "https://employee-attrition-predictor-ycoi.onrender.com",
       "code": "https://github.com/Tushar-6969/Employee_Attrition_Predictor"
     }
-  },{
+  },
+  
+  {
+    "name": "Nestin",
+    "desc": "NestIn is a full-stack rental listing web app built using the MERN stack (without React). It enables users to browse, post, and manage property listings with features like authentication, image uploads, and reviews.",
+    "image": "instagrammern",
+    "Tech-Stack": "Reactjs,Nodejs,Mongodb,Ejs,Express",
+    "links": {
+      "view": "https://nestin-lftl.onrender.com/listings",
+      "code": "https://github.com/Tushar-6969/NestIn"
+    }
+  },
+  
+  {
     "name": "Ai-Studypal",
     "desc": "Full-Stack chatbot for learning using google ai studio api ",
     "image": "instagrammern",
