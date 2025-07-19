@@ -1,5 +1,14 @@
 [
   {
+    "name": "Employee_Attrition_Predictor",
+    "desc": "AI-Powered Attrition Risk Analyzer using ML, RAG & Actionable Insights",
+    "image": "instagrammern",
+    "Tech-Stack": "python,flask,chromadb",
+    "links": {
+      "view": "https://employee-attrition-predictor-ycoi.onrender.com",
+      "code": "https://github.com/Tushar-6969/Employee_Attrition_Predictor"
+    }
+  },{
     "name": "Ai-Studypal",
     "desc": "Full-Stack chatbot for learning using google ai studio api ",
     "image": "instagrammern",
