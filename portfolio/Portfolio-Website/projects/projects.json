@@ -12,7 +12,7 @@
   
   {
     "name": "Nestin",
-    "desc": "NestIn is a full-stack rental listing web app built using the MERN stack (without React). It enables users to browse, post, and manage property listings.",
+    "desc": "NestIn is a full-stack rental listing web app built using the MERN stack. It enables users to browse, post, and manage property listings.",
     "image": "instagrammern",
     "Tech-Stack": "Reactjs,Nodejs,Mongodb,Ejs,Express",
     "links": {
