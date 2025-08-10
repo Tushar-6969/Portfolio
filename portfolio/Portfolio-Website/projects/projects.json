@@ -5,7 +5,7 @@
     "image": "instagrammern",
     "Tech-Stack": "python,flask,chromadb",
     "links": {
-      "view": "https://employee-attrition-predictor-ycoi.onrender.com",
+      "view": "https://employee-attrition-predictor-1xze.onrender.com/",
       "code": "https://github.com/Tushar-6969/Employee_Attrition_Predictor"
     }
   },
@@ -31,16 +31,33 @@
       "code": "https://github.com/Tushar-6969/AI-StudyPal"
     }
   },
+
+
+  {
+    "name": "Medibot",
+    "desc": "MediBot AI predicts diseases from symptoms and answers medical queries using RAG with TensorFlow, Pinecone, SentenceTransformer, and Gemini API",
+    "image": "portfolio1",
+    "category": "basicweb",
+    "links": {
+      "view": "https://drive.google.com/file/d/1nk0J5f-AwWGXYgPsKXnSFibZ4OoxrsE6/view?usp=sharing",
+      "code": "https://github.com/Tushar-6969/medibot"
+    }
+  }
+,
+
   {
     "name": "Fake News Detector",
     "desc": "A machine learning model that detects fake news using NLP.\nBuilt using a pre-trained BERT model fine-tuned with Kaggle dataset ",
     "image": "flipkartmern",
     "category": "mern",
     "links": {
-      "view": "https://fake-news-1.onrender.com/",
+      "view": "https://drive.google.com/file/d/1nk0J5f-AwWGXYgPsKXnSFibZ4OoxrsE6/view?usp=sharing",
       "code": "https://github.com/Tushar-6969/bert-fake-news-detector"
     }
-  },
+  }
+  
+  
+  ,
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
@@ -51,4 +68,5 @@
       "code": "https://github.com/Tushar-6969/Portfolio"
     }
   }
+  
 ]
