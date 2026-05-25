@@ -1,8 +1,19 @@
 [
   {
+    "name": "AI Interview Prep App",
+    "desc": "AI-powered MERN Interview Prep Platform with role-based question generation, saved sessions, and detailed AI answers.",
+    "image": "ai",
+    "category": "mern",
+    "Tech-Stack": "Reactjs,Nodejs,MongoDB,Express,JWT,AI",
+    "links": {
+      "view": "https://ai-interview-preparation-frontend.onrender.com/",
+      "code": "https://github.com/Tushar-6969/AI_INTERVIEW_PREPARATION"
+    }
+  },
+  {
     "name": "Employee_Attrition_Predictor",
     "desc": "AI-Powered Attrition Risk Analyzer using ML, RAG & Actionable Insights",
-    "image": "instagrammern",
+    "image": "emp",
     "Tech-Stack": "python,flask,chromadb",
     "links": {
       "view": "https://employee-attrition-predictor-1xze.onrender.com/",
@@ -13,7 +24,7 @@
   {
     "name": "Nestin",
     "desc": "NestIn is a full-stack rental listing web app built using the MERN stack. It enables users to browse, post, and manage property listings.",
-    "image": "instagrammern",
+    "image": "nest",
     "Tech-Stack": "Reactjs,Nodejs,Mongodb,Ejs,Express",
     "links": {
       "view": "https://nestin-lftl.onrender.com/listings",
@@ -24,7 +35,7 @@
   {
     "name": "Ai-Studypal",
     "desc": "Full-Stack chatbot for learning using google ai studio api ",
-    "image": "instagrammern",
+    "image": "study",
     "Tech-Stack": "mongodb,nodejs,ejs,express",
     "links": {
       "view": "https://ai-studypal-1.onrender.com/",
@@ -36,7 +47,7 @@
   {
     "name": "Medibot",
     "desc": "MediBot AI predicts diseases from symptoms and answers medical queries using RAG with TensorFlow, Pinecone, SentenceTransformer, and Gemini API",
-    "image": "portfolio1",
+    "image": "medibot",
     "category": "basicweb",
     "links": {
       "view": "https://drive.google.com/drive/folders/1r12vazvqQlYwzrG8SfJv_8DMcY7VJJat?usp=drive_link",
@@ -48,7 +59,7 @@
   {
     "name": "Fake News Detector",
     "desc": "A machine learning model that detects fake news using NLP.\nBuilt using a pre-trained BERT model fine-tuned with Kaggle dataset ",
-    "image": "flipkartmern",
+    "image": "fake",
     "category": "mern",
     "links": {
       "view": "https://drive.google.com/file/d/1nk0J5f-AwWGXYgPsKXnSFibZ4OoxrsE6/view?usp=sharing",
@@ -58,10 +69,11 @@
   
   
   ,
+  
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "portfolio1",
+    "image": "port",
     "category": "basicweb",
     "links": {
       "view": "#",

@@ -39,9 +39,16 @@ $(document).ready(function () {
 
     // emailjs to mail contact form data
     $("#contact-form").submit(function (event) {
+        event.preventDefault();
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        const form = $(this);
+        form.find('input[name="from_name"]').val(form.find('input[name="name"]').val());
+        form.find('input[name="from_email"]').val(form.find('input[name="email"]').val());
+        form.find('input[name="reply_to"]').val(form.find('input[name="email"]').val());
+        form.find('input[name="user_phone"]').val(form.find('input[name="phone"]').val());
+
+        emailjs.sendForm('service_d43oivd', 'template_2vit9bq', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -50,7 +57,6 @@ $(document).ready(function () {
                 console.log('FAILED...', error);
                 alert("Form Submission Failed! Try Again");
             });
-        event.preventDefault();
     });
 
 });
@@ -105,7 +111,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
