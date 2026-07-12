@@ -37,27 +37,45 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // emailjs to mail contact form data
-    $("#contact-form").submit(function (event) {
-        event.preventDefault();
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+    const contactForm = document.getElementById("contact-form");
+    const contactMessage = document.getElementById("contact-message");
 
-        const form = $(this);
-        form.find('input[name="from_name"]').val(form.find('input[name="name"]').val());
-        form.find('input[name="from_email"]').val(form.find('input[name="email"]').val());
-        form.find('input[name="reply_to"]').val(form.find('input[name="email"]').val());
-        form.find('input[name="user_phone"]').val(form.find('input[name="phone"]').val());
+    if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const submitButton = contactForm.querySelector("button[type=submit]");
+            const originalText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = "Sending...";
 
-        emailjs.sendForm('service_d43oivd', 'template_2vit9bq', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-    });
+            const formData = new FormData(contactForm);
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    contactMessage.textContent = "Thank you! Your message has been sent successfully.";
+                    contactMessage.classList.remove("error");
+                    contactMessage.classList.add("success");
+                    contactForm.reset();
+                } else {
+                    const result = await response.json().catch(() => null);
+                    contactMessage.textContent = result?.message || "Submission failed. Please try again later.";
+                    contactMessage.classList.remove("success");
+                    contactMessage.classList.add("error");
+                }
+            } catch (error) {
+                contactMessage.textContent = "Unable to send message right now. Please try again later.";
+                contactMessage.classList.remove("success");
+                contactMessage.classList.add("error");
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalText;
+            }
+        });
+    }
 
 });
 

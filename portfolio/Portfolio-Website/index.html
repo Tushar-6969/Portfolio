@@ -264,11 +264,8 @@ Currently building, learning, and exploring opportunities that combine AI with s
       <div class="image-box">
         <img draggable="false" src="./assets/images/contact1.png" alt="">
       </div>
-    <form id="contact-form">
-      <input type="hidden" name="from_name" />
-      <input type="hidden" name="from_email" />
-      <input type="hidden" name="reply_to" />
-      <input type="hidden" name="user_phone" />
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="a24eff22-daac-4db0-87de-2c8e95416846" />
       <input type="hidden" name="subject" value="New Portfolio Contact Message" />
       <input type="hidden" name="title" value="Portfolio Contact Message" />
 
@@ -278,21 +275,22 @@ Currently building, learning, and exploring opportunities that combine AI with s
           <i class='fas fa-user'></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required>
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
+          <input type="tel" name="phone" placeholder="Phone">
           <i class='fas fa-phone-alt'></i>
         </div>
         <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
+          <textarea placeholder="Message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
         </div>
-        </div>
-      <div class="button-area">
-        <!-- <button type="submit" class="btn">Submit <i class="fa fa-paper-plane"></i></button> -->
       </div>
+      <div class="button-area">
+        <button type="submit" class="btn">Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+      <div id="contact-message" class="form-message" aria-live="polite"></div>
     </form>
   </div>
   </div>
@@ -362,11 +360,6 @@ Currently building, learning, and exploring opportunities that combine AI with s
 
 <!-- scroll reveal anim -->
 <script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
